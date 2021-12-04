@@ -15,7 +15,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome, this is Sam's Wilk Portfolio Page
+          Welcome, this is Sam Wilk Portfolio Page
         </h1>
 
       </main>
