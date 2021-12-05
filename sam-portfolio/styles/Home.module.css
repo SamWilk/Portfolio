@@ -12,6 +12,10 @@
   align-items: flex-start;
 }
 
+.back {
+  z-index: -1;
+}
+
 .footer {
   display: flex;
   flex: 1;
