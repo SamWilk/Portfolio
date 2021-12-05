@@ -15,6 +15,11 @@ const Navbar = () => {
             <a className={styles.each}>Searching Algorithms</a>
           </Link>
         </div>
+        <div>
+          <Link href="https://github.com/SamWilk">
+            <a className={styles.GitHub}>GitHub</a>
+          </Link>
+        </div>
       </div>
     </>
   );

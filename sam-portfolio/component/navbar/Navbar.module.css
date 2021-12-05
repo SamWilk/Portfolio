@@ -12,3 +12,8 @@
 .logo {
   padding: 10px;
 }
+.GitHub {
+  position: absolute;
+  right: 0;
+  margin-right: 3rem;
+}
