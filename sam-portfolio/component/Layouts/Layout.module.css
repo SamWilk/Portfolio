@@ -1,5 +1,6 @@
 .container {
-  padding-left: 2rem;
+  z-index: 0;
   padding-right: 2rem;
-  background-color: #001f3f;
+  background-color: #0b1f1d;
+  display: flex;
 }

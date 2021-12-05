@@ -1,15 +1,18 @@
 .bar {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
 }
 
 .back {
+  min-width: 300px;
   background-color: #0074d9;
-  border-radius: 6px;
+  z-index: 1;
 }
 
 .logo {
-  padding: 10px;
+  padding: 30px;
 }
 
 .each {
