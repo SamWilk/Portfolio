@@ -4,9 +4,9 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <>
-      <div className={styles.bar}>
-        <div className={styles.logo}>logo</div>
-        <div className={styles.links}>
+      <div className={styles.back}>
+        <div className={styles.bar}>
+          <div className={styles.logo}>logo</div>
           <Link href="/">
             <a className={styles.each}>Home</a>
           </Link>
@@ -14,10 +14,10 @@ const Navbar = () => {
             {/* http://search-page-static-sam.s3-website.us-east-2.amazonaws.com/ */}
             <a className={styles.each}>Searching Algorithms</a>
           </Link>
-        </div>
-        <div>
           <Link href="https://github.com/SamWilk">
-            <a className={styles.GitHub}>GitHub</a>
+            <a className={styles.each} target="_blank">
+              GitHub
+            </a>
           </Link>
         </div>
       </div>
