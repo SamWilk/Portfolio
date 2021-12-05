@@ -1,9 +1,9 @@
-import Navbar from "../../component/navbar/Navbar";
+import styles from "../Searching-algo/searchingList.module.css";
 
 const searchingList = () => {
   return (
     <>
-      <div>Searching List....</div>
+      <div className={styles.container}>Searching List....</div>
     </>
   );
 };

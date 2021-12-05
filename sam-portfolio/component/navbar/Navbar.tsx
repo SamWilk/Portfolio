@@ -14,6 +14,9 @@ const Navbar = () => {
             {/* http://search-page-static-sam.s3-website.us-east-2.amazonaws.com/ */}
             <a className={styles.each}>Searching Algorithms</a>
           </Link>
+          <Link href="/About-me/Aboutme">
+            <a className={styles.each}>About me</a>
+          </Link>
           <Link href="https://github.com/SamWilk">
             <a className={styles.each} target="_blank">
               GitHub
