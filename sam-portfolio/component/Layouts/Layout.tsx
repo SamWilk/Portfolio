@@ -8,8 +8,8 @@ const Layout = ({ children }: any) => {
       <div className={styles.container}>
         <Navbar />
         {children}
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 };
