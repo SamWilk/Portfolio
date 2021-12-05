@@ -15,7 +15,12 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to Sam Wilk Portfolio Page</h1>
+        <h1 className={styles.title}>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo itaque
+          voluptatem voluptas sed nostrum velit illum, corporis voluptate enim
+          soluta ullam, incidunt suscipit reprehenderit tempore fugiat! Magni
+          corrupti laborum placeat.
+        </h1>
       </main>
     </div>
   );

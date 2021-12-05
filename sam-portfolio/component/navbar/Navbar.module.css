@@ -1,14 +1,24 @@
-.link_list {
-  text-decoration: none;
-  list-style-type: none;
-}
-
 .bar {
   display: inline-flex;
   align-items: center;
-  padding: 15px;
+}
+
+.back {
+  background-color: #0074d9;
+  border-radius: 6px;
 }
 
 .logo {
   padding: 10px;
+}
+
+.each {
+  padding: 20px;
+  transition: 0.4s ease;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.each:hover {
+  background-color: #7fdbff;
 }
