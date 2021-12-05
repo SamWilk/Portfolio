@@ -1,0 +1,14 @@
+.link_list {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.bar {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo {
+  padding: 10px;
+}
