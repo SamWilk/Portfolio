@@ -6,9 +6,6 @@ import Navbar from "../component/navbar/Navbar";
 import styles from "../styles/Home.module.css";
 import Footer from "../component/footer/Footer";
 import dynamic from "next/dynamic";
-import BGImage from "../component/images/BGImage";
-
-const Bgimage = dynamic(() => import("../component/images/BGImage"));
 
 const Home: NextPage = () => {
   return (
