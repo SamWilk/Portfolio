@@ -17,8 +17,13 @@ const Home: NextPage = () => {
         </Head>
         <main className={styles.main}>
           <h1 className={styles.title}>Sam Wilk</h1>
-          <h3 className={styles.describe}>Computer Science Student | University of North Florida</h3>
-          <h3 className={styles.describe}>Front End Developer</h3>
+          <h3 className={styles.describe}>
+            Computer Science Student |
+            <Link href="https://www.unf.edu/">
+              <a target="_blank"> University of North Florida</a>
+            </Link>
+          </h3>
+          <h3 className={styles.describe1}>Front End Developer</h3>
         </main>
         <div className={styles.Photo}>
           <Image src="/Jax.jpeg" width={1140} height={800} layout="fill" />

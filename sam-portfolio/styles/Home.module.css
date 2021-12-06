@@ -1,6 +1,6 @@
-.container {
-  /* padding: 0 2rem; */
-}
+/* .container {
+  padding: 0 2rem;
+} */
 
 .main {
   min-height: 100vh;
@@ -40,6 +40,8 @@
 }
 
 .title {
+  animation-name: movement;
+  animation-duration: 0.4s;
   margin: 0;
   line-height: 1.15;
   color: white;
@@ -48,6 +50,18 @@
 }
 
 .describe {
+  animation-name: movement;
+  animation-duration: 1s;
+  margin-top: 10px;
+  margin-bottom: 0;
+  line-height: 1.15;
+  color: white;
+  z-index: 1;
+}
+
+.describe1 {
+  animation-name: movement;
+  animation-duration: 1.5s;
   margin-top: 10px;
   margin-bottom: 0;
   line-height: 1.15;
@@ -127,5 +141,16 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+@keyframes movement {
+  from {
+    opacity: 0;
+    margin-left: 150px;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0px;
   }
 }
