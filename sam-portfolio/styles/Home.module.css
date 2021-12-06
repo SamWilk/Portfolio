@@ -46,6 +46,7 @@
   line-height: 1.15;
   color: white;
   z-index: 1;
+  font-family: "Roboto", sans-serif;
   /* font-size: 4rem; */
 }
 
@@ -57,6 +58,7 @@
   line-height: 1.15;
   color: white;
   z-index: 1;
+  font-family: "Roboto", sans-serif;
 }
 
 .describe1 {
@@ -67,6 +69,7 @@
   line-height: 1.15;
   color: white;
   z-index: 1;
+  font-family: "Roboto", sans-serif;
 }
 
 .Photo {
