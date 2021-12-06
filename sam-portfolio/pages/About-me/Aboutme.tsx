@@ -24,6 +24,7 @@ const Aboutme = () => {
         </div>
         <div id="text"></div>
       </div>
+
     </>
   );
 };

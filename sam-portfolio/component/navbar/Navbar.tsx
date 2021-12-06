@@ -1,9 +1,16 @@
 import styles from "../navbar/Navbar.module.css";
 import Link from "next/link";
+import Head from "next/head";
 
 const Navbar = () => {
   return (
     <>
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <div className={styles.back}>
         <div className={styles.bar}>
           <div className={styles.logo}>logo</div>
