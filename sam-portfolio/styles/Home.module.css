@@ -1,15 +1,15 @@
 .container {
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
 }
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
   flex: 1;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10rem;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
 .footer {
@@ -43,8 +43,21 @@
   margin: 0;
   line-height: 1.15;
   color: white;
-
+  z-index: 1;
   /* font-size: 4rem; */
+}
+
+.describe {
+  margin-top: 10px;
+  margin-bottom: 0;
+  line-height: 1.15;
+  color: white;
+  z-index: 1;
+}
+
+.Photo {
+  z-index: 0;
+  opacity: 0.4;
 }
 
 .title,
