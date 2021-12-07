@@ -3,19 +3,19 @@ import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
 import Education from "../../component/Education/Education";
+import Work from "../../component/Work/Work";
 
 const Aboutme = () => {
-  function showEducation(val: boolean) {
-    setEdu(val);
-  }
-  function showWork(val: boolean) {
-    setWork(val);
-  }
-  function showRes(val: boolean) {
-    setRes(val);
-  }
-  function showContact(val: boolean) {
-    setContact(val);
+  function handleChange(
+    edu: boolean,
+    work: boolean,
+    res: boolean,
+    contact: boolean
+  ) {
+    setEdu(edu);
+    setWork(work);
+    setRes(res);
+    setContact(contact);
   }
   const [edu, setEdu] = useState<boolean>(false);
   const [work, setWork] = useState<boolean>(false);
@@ -34,23 +34,42 @@ const Aboutme = () => {
         <div className={styles.back}>
           <div className={styles.bar}>
             <Link href="/About-me/Aboutme">
-              <a className={styles.links} onClick={() => showEducation(!edu)}>
+              <a
+                className={styles.links}
+                onClick={() => handleChange(true, false, false, false)}
+              >
                 Education
               </a>
             </Link>
             <Link href="/About-me/Aboutme">
-              <a className={styles.links}>Work</a>
+              <a
+                className={styles.links}
+                onClick={() => handleChange(false, true, false, false)}
+              >
+                Work
+              </a>
             </Link>
             <Link href="/About-me/Aboutme">
-              <a className={styles.links}>Resume</a>
+              <a
+                className={styles.links}
+                onClick={() => handleChange(false, false, true, false)}
+              >
+                Resume
+              </a>
             </Link>
             <Link href="/About-me/Aboutme">
-              <a className={styles.links}>Contact</a>
+              <a
+                className={styles.links}
+                onClick={() => handleChange(false, false, false, true)}
+              >
+                Contact
+              </a>
             </Link>
           </div>
         </div>
         <div id="content" className={styles.content}>
           {edu && <Education />}
+          {work && <Work />}
         </div>
       </div>
     </>
