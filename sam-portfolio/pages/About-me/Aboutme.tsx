@@ -1,30 +1,38 @@
 import styles from "../About-me/Aboutme.module.css";
+import Head from "next/head";
 import Link from "next/link";
 
 const Aboutme = () => {
-  function showEducation() {
-    let list = "words go here";
-    document.getElementById("text")!.innerHTML = list;
-  }
-  function showWork() {
-    let list = "Words were here";
-    document.getElementById("text")!.innerHTML = list;
-  }
+  function showEducation() {}
 
   return (
     <>
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <div className={styles.container}>
-        <div className={styles.list}>
-          <Link href="/About-me/Aboutme">
-            <a onClick={() => showEducation()}>Education</a>
-          </Link>
-          <Link href="/About-me/Aboutme">
-            <a onClick={() => showWork()}>Work</a>
-          </Link>
+        <div className={styles.back}>
+          <div className={styles.bar}>
+            <Link href="/About-me/Aboutme">
+              <a className={styles.links} onClick={() => showEducation()}>
+                Education
+              </a>
+            </Link>
+            <Link href="/About-me/Aboutme">
+              <a className={styles.links}>Work</a>
+            </Link>
+            <Link href="/About-me/Aboutme">
+              <a className={styles.links}>Resume</a>
+            </Link>
+            <Link href="/About-me/Aboutme">
+              <a className={styles.links}>Contact</a>
+            </Link>
+          </div>
         </div>
-        <div id="text"></div>
       </div>
-
     </>
   );
 };
