@@ -4,6 +4,9 @@ import Link from "next/link";
 import { useState } from "react";
 import Education from "../../component/Education/Education";
 import Work from "../../component/Work/Work";
+// import { school } from "../../data/schools";
+import { PrismaClient } from ".prisma/client";
+import { school } from "../../data/schools";
 
 const Aboutme = () => {
   function handleChange(

@@ -1,7 +1,24 @@
 import styles from "../Education/Education.module.css";
 import Head from "next/head";
+import { useEffect } from "react";
+import { getSchools } from "../../pages/api/getSchools";
 
-const Education = () => {
+export const getServerSIdeProps = async () => {
+  // const schools = await prisma.school.findMany();
+  const school = [
+    {
+      id: 1,
+      name: "University of North Florida",
+    },
+  ];
+  return {
+    props: {
+      school,
+    },
+  };
+};
+
+const Education = ({ school }) => {
   return (
     <>
       <Head>
