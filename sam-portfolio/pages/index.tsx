@@ -22,6 +22,7 @@ const Home: NextPage = () => {
         <main className={styles.main}>
           <h1 className={styles.title}>Sam Wilk</h1>
           <h3 className={styles.describe}>
+
             Computer Science Student |
             <Link href="https://www.unf.edu/">
               <a target="_blank"> University of North Florida</a>

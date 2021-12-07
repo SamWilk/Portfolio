@@ -33,6 +33,7 @@ const Aboutme = () => {
           </div>
         </div>
       </div>
+
     </>
   );
 };
