@@ -1,7 +1,10 @@
 import styles from "../Education/Education.module.css";
 import Head from "next/head";
 
-const Education = () => {
+const Education = (props: { schools: any }) => {
+  const { schools } = props;
+  const unf = schools[0];
+  const fscj = schools[1];
   return (
     <>
       <Head>
@@ -10,7 +13,14 @@ const Education = () => {
           rel="stylesheet"
         />
       </Head>
-      <div className={styles.container}>Education</div>
+      <div className={styles.container}>
+        Education
+        <ul>
+          {schools.map((items) => {
+            <li key={items.id}>{items.name}</li>;
+          })}
+        </ul>
+      </div>
     </>
   );
 };

@@ -1,11 +1,24 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import styles from "../About-me/Aboutme.module.css";
 import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
 import Education from "../../component/Education/Education";
 import Work from "../../component/Work/Work";
+import { PrismaClient } from ".prisma/client";
 
-const Aboutme = () => {
+const prisma = new PrismaClient();
+
+export async function getServerSideProps() {
+  const schools = await prisma.school.findMany();
+
+  return { props: { schools } };
+}
+
+const Aboutme = (props: { schools: any }) => {
+  const { schools } = props;
+  console.log(schools);
+
   function handleChange(
     edu: boolean,
     work: boolean,
@@ -68,7 +81,7 @@ const Aboutme = () => {
           </div>
         </div>
         <div id="content" className={styles.content}>
-          {edu && <Education />}
+          {edu && <Education {...props} />}
           {work && <Work />}
         </div>
       </div>
