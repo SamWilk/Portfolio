@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+.content {
+  width: 100%;
+}
+
 .list {
   background-color: #7e8584;
   display: inline-flex;

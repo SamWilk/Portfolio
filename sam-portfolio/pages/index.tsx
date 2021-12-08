@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap"
             rel="stylesheet"
           />
           <title>Sam Wilk Portfolio</title>
@@ -22,7 +22,6 @@ const Home: NextPage = () => {
         <main className={styles.main}>
           <h1 className={styles.title}>Sam Wilk</h1>
           <h3 className={styles.describe}>
-
             Computer Science Student |
             <Link href="https://www.unf.edu/">
               <a target="_blank"> University of North Florida</a>
