@@ -11,7 +11,7 @@ datasource db {
 }
 
 model School{
-  id        Int  @id @default(autoincrement())
+  id        Int  @unique @id @default(autoincrement())
   name      String @unique
   major     String
   degree    String
@@ -19,7 +19,14 @@ model School{
 }
 
 model Projects{
-  id    Int @id @default(autoincrement())
+  id    Int @unique @id @default(autoincrement())
   name  String
   site  String
+}
+
+model Clubs{
+  id          Int  @unique @id @default(autoincrement())
+  clubName    String 
+  dateJoined  String
+  position    String
 }

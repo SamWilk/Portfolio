@@ -14,14 +14,16 @@ export async function getServerSideProps() {
   const schools = await prisma.school.findMany();
   //Create a table for clubs and use the schools.name to check for the club table
   //const clubs = await prisma.clubs.findUnique({where: {schools.name: name}}), meaning get the clubs where the schools
+  const clubs = await prisma.clubs.findFirst({ where: { id: 1 } });
   //is the same
   //On return statement do return { props: { schools, clubs }}, this will return multiple props
-  return { props: { schools } };
+  return { props: { schools, clubs } };
 }
 
 //Then here do props: { schools: any, clubs: any}
-const Aboutme = (props: { schools: any }) => {
+const Aboutme = (props: any) => {
   const { schools } = props;
+  const { clubs } = props;
 
   function handleChange(
     edu: boolean,
