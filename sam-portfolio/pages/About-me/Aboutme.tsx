@@ -6,18 +6,22 @@ import { useState } from "react";
 import Education from "../../component/Education/Education";
 import Work from "../../component/Work/Work";
 import { PrismaClient } from ".prisma/client";
+// import "rxjs/add/operator/map";
 
 const prisma = new PrismaClient();
 
 export async function getServerSideProps() {
   const schools = await prisma.school.findMany();
-
+  //Create a table for clubs and use the schools.name to check for the club table
+  //const clubs = await prisma.clubs.findUnique({where: {schools.name: name}}), meaning get the clubs where the schools
+  //is the same
+  //On return statement do return { props: { schools, clubs }}, this will return multiple props
   return { props: { schools } };
 }
 
+//Then here do props: { schools: any, clubs: any}
 const Aboutme = (props: { schools: any }) => {
   const { schools } = props;
-  console.log(schools);
 
   function handleChange(
     edu: boolean,
@@ -30,7 +34,7 @@ const Aboutme = (props: { schools: any }) => {
     setRes(res);
     setContact(contact);
   }
-  const [edu, setEdu] = useState<boolean>(false);
+  const [edu, setEdu] = useState<boolean>(true);
   const [work, setWork] = useState<boolean>(false);
   const [res, setRes] = useState<boolean>(false);
   const [contact, setContact] = useState<boolean>(false);

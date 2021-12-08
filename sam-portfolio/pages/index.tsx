@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
@@ -5,8 +6,20 @@ import Link from "next/link";
 import Navbar from "../component/navbar/Navbar";
 import styles from "../styles/Home.module.css";
 import Footer from "../component/footer/Footer";
+import { PrismaClient } from ".prisma/client";
 
-const Home: NextPage = () => {
+const prisma = new PrismaClient();
+
+export async function getServerSideProps() {
+  const schools = await prisma.school.findFirst({
+    where: { name: "University of North Florida" },
+  });
+
+  return { props: { schools } };
+}
+
+const Home: NextPage<any> = (props: { schools: any }) => {
+  const { schools } = props;
   return (
     <>
       <div className={styles.container}>
@@ -24,13 +37,19 @@ const Home: NextPage = () => {
           <h3 className={styles.describe}>
             Computer Science Student |
             <Link href="https://www.unf.edu/">
-              <a target="_blank"> University of North Florida</a>
+              <a target="_blank"> {schools.name}</a>
             </Link>
           </h3>
           <h3 className={styles.describe1}>Front End Developer</h3>
         </main>
         <div className={styles.Photo}>
-          <Image src="/Jax.jpeg" width={1140} height={800} layout="fill" />
+          <Image
+            src="/Jax.jpeg"
+            width={1140}
+            height={800}
+            layout="fill"
+            alt="Jax SkyLine"
+          />
         </div>
       </div>
     </>

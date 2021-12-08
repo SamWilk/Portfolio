@@ -2,7 +2,39 @@
   color: white;
   font-family: "Roboto", sans-serif;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   height: 80vw;
   width: 100%;
+  padding: 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+  min-height: 10vw;
+  justify-content: space-evenly;
+  background-color: #414445;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.box {
+  padding: 1rem;
+}
+.box1 {
+  padding: 1rem;
+  background-color: #0b1f1d;
+  padding: 4rem;
+  border-radius: 5px;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.each {
+  padding-top: 0.5rem;
 }
