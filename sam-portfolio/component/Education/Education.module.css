@@ -3,7 +3,7 @@
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  height: 80vw;
+  height: 50vw;
   width: 100%;
   padding: 1rem;
 }
@@ -14,7 +14,7 @@
   padding: 2rem;
   margin: 1rem;
   min-height: 10vw;
-  background-color: #414445;
+  background-color: #7e8584;
   border-radius: 5px;
   align-items: center;
 }
@@ -27,7 +27,7 @@
 }
 .box1 {
   padding: 1rem;
-  background-color: #0b1f1d;
+  background-color: #202121;
   padding: 4rem;
   border-radius: 5px;
   float: left;
@@ -42,5 +42,13 @@
 }
 
 .each {
-  padding-top: 0.5rem;
+  padding-top: 0.3rem;
+}
+
+.clubDiscrip {
+  max-width: 50%;
+}
+
+.discripTitle {
+  padding-bottom: 0.5rem;
 }

@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import styles from "../Projects/projects.module.css";
 import Head from "next/head";
+import NotDone from "../../component/notDone/NotDone";
 
 const searchingList = () => {
   return (
@@ -10,7 +12,9 @@ const searchingList = () => {
           rel="stylesheet"
         />
       </Head>
-      <div className={styles.container}>Projects....</div>
+      <div className={styles.container}>
+        <NotDone />
+      </div>
     </>
   );
 };

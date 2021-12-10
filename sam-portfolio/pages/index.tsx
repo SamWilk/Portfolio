@@ -43,13 +43,7 @@ const Home: NextPage<any> = (props: { schools: any }) => {
           <h3 className={styles.describe1}>Front End Developer</h3>
         </main>
         <div className={styles.Photo}>
-          <Image
-            src="/Jax.jpeg"
-            width={1140}
-            height={800}
-            layout="fill"
-            alt="Jax SkyLine"
-          />
+          <Image src="/Jax.jpeg" layout="fill" alt="Jax SkyLine" />
         </div>
       </div>
     </>

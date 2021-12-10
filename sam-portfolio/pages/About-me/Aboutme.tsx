@@ -12,19 +12,14 @@ const prisma = new PrismaClient();
 
 export async function getServerSideProps() {
   const schools = await prisma.school.findMany();
-  //Create a table for clubs and use the schools.name to check for the club table
-  //const clubs = await prisma.clubs.findUnique({where: {schools.name: name}}), meaning get the clubs where the schools
   const clubs = await prisma.clubs.findFirst({ where: { id: 1 } });
-  //is the same
-  //On return statement do return { props: { schools, clubs }}, this will return multiple props
-  return { props: { schools, clubs } };
+  const work = await prisma.work.findMany();
+
+  return { props: { schools, clubs, work } };
 }
 
 //Then here do props: { schools: any, clubs: any}
 const Aboutme = (props: any) => {
-  const { schools } = props;
-  const { clubs } = props;
-
   function handleChange(
     edu: boolean,
     work: boolean,
@@ -68,14 +63,14 @@ const Aboutme = (props: any) => {
                 Work
               </a>
             </Link>
-            <Link href="/About-me/Aboutme">
+            {/* <Link href="/About-me/Aboutme">
               <a
                 className={styles.links}
                 onClick={() => handleChange(false, false, true, false)}
               >
                 Resume
               </a>
-            </Link>
+            </Link> */}
             <Link href="/About-me/Aboutme">
               <a
                 className={styles.links}
@@ -88,7 +83,7 @@ const Aboutme = (props: any) => {
         </div>
         <div id="content" className={styles.content}>
           {edu && <Education {...props} />}
-          {work && <Work />}
+          {work && <Work {...props} />}
         </div>
       </div>
     </>
