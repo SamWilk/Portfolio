@@ -1,15 +1,36 @@
 /* .container {
-  padding: 0 2rem;
+  margin-bottom: 10vh;
 } */
 
 .main {
-  min-height: 100vh;
+  min-height: 100%;
   flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* margin-left: 10rem; */
+  flex-direction: row;
+}
+
+.boxTitle {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 10rem;
+  /* margin-left: 10rem; */
   flex-direction: column;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+  animation: fadein;
+  animation-duration: 1.5s;
+  color: white;
+}
+
+.school:hover {
+  color: #202121;
 }
 
 .footer {
@@ -53,7 +74,7 @@
 .describe {
   animation-name: movement;
   animation-duration: 1s;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 0;
   line-height: 1.15;
   color: white;
@@ -64,7 +85,7 @@
 .describe1 {
   animation-name: movement;
   animation-duration: 1.5s;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 0;
   line-height: 1.15;
   color: white;
@@ -75,6 +96,13 @@
 .Photo {
   z-index: 0;
   opacity: 0.4;
+}
+
+.pic {
+  /* max-width: 125px; */
+  /* margin-left: 1rem; */
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .title,
@@ -155,5 +183,14 @@
   to {
     opacity: 1;
     margin-left: 0px;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

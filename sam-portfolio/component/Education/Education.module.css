@@ -3,7 +3,7 @@
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  height: 50vw;
+  min-height: 50vw;
   width: 100%;
   padding: 1rem;
 }

@@ -25,7 +25,7 @@ const Home: NextPage<any> = (props: { schools: any }) => {
       <div className={styles.container}>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
             rel="stylesheet"
           />
           <title>Sam Wilk Portfolio</title>
@@ -33,18 +33,26 @@ const Home: NextPage<any> = (props: { schools: any }) => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main className={styles.main}>
-          <h1 className={styles.title}>Sam Wilk</h1>
-          <h3 className={styles.describe}>
-            Computer Science Student |
-            <Link href="https://www.unf.edu/">
-              <a target="_blank"> {schools.name}</a>
-            </Link>
-          </h3>
-          <h3 className={styles.describe1}>Front End Developer</h3>
+          <div className={styles.boxTitle}>
+            <h1 className={styles.title}>Sam Wilk</h1>
+            <h3 className={styles.describe}>
+              Computer Science Student |
+              <Link href="https://www.unf.edu/">
+                <a target="_blank" className={styles.school}>
+                  {" "}
+                  {schools.name}
+                </a>
+              </Link>
+            </h3>
+            <h3 className={styles.describe1}>Front End Developer</h3>
+          </div>
+          <div className={styles.box}>
+            <div className={styles.pic}>
+              <Image src="/Me.jpeg" width={400} height={400} alt="Sam Wilk" />
+            </div>
+            <div></div>
+          </div>
         </main>
-        <div className={styles.Photo}>
-          <Image src="/Jax.jpeg" layout="fill" alt="Jax SkyLine" />
-        </div>
       </div>
     </>
   );

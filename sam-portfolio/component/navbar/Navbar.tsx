@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import styles from "../navbar/Navbar.module.css";
 import Link from "next/link";
 import Head from "next/head";
@@ -13,7 +14,7 @@ const Navbar = () => {
       </Head>
       <div className={styles.back}>
         <div className={styles.bar}>
-          <div className={styles.logo}>logo</div>
+          {/* <div className={styles.logo}>logo</div> */}
           <Link href="/">
             <a className={styles.each}>Home</a>
           </Link>

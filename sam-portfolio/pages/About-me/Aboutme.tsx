@@ -40,12 +40,12 @@ const Aboutme = (props: any) => {
     <>
       <Head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
           rel="stylesheet"
         />
       </Head>
       <div className={styles.container}>
-        <div className={styles.back}>
+        {/* <div className={styles.back}>
           <div className={styles.bar}>
             <Link href="/About-me/Aboutme">
               <a
@@ -62,8 +62,8 @@ const Aboutme = (props: any) => {
               >
                 Work
               </a>
-            </Link>
-            {/* <Link href="/About-me/Aboutme">
+            </Link> */}
+        {/* <Link href="/About-me/Aboutme">
               <a
                 className={styles.links}
                 onClick={() => handleChange(false, false, true, false)}
@@ -71,7 +71,7 @@ const Aboutme = (props: any) => {
                 Resume
               </a>
             </Link> */}
-            <Link href="/About-me/Aboutme">
+        {/* <Link href="/About-me/Aboutme">
               <a
                 className={styles.links}
                 onClick={() => handleChange(false, false, false, true)}
@@ -80,10 +80,10 @@ const Aboutme = (props: any) => {
               </a>
             </Link>
           </div>
-        </div>
+        </div> */}
         <div id="content" className={styles.content}>
-          {edu && <Education {...props} />}
-          {work && <Work {...props} />}
+          {/* {edu && <Education {...props} />} */}
+          {/* {work && <Work {...props} />} */}
         </div>
       </div>
     </>
