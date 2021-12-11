@@ -1,13 +1,17 @@
 .bar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   justify-content: center;
+  transition: 0.4s ease;
+  z-index: 1;
 }
 
 .back {
   min-width: 250px;
-  background-color: #7e8584;
+  /* background-color: #7e8584; */
+  background: transparent;
+  transition: 0.4s ease;
   z-index: 1;
 }
 
@@ -25,5 +29,22 @@
 }
 
 .each:hover {
-  background-color: #4299a6;
+  transform: translateY(10%);
+  /* background-color: #4299a6; */
+  /* background: linear-gradient(to right, #1f98de, transparent); */
 }
+
+/* .each1 {
+  padding: 20px;
+  transition: 0.4s ease;
+  height: 100%;
+  border-radius: 2px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.each1:hover {
+  transform: translateY(-15%);
+  background-color: #4299a6;
+  background: linear-gradient(to right, #1f98de, transparent);
+} */

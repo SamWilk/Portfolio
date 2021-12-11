@@ -1,15 +1,20 @@
 import Footer from "../footer/Footer";
 import Navbar from "../navbar/Navbar";
 import styles from "../Layouts/Layout.module.css";
+import Image from "next/image";
 
 const Layout = ({ children }: any) => {
   return (
     <>
       <div className={styles.container}>
         <Navbar />
-        {children}
+
+        <div className={styles.content}>{children}</div>
       </div>
-      <Footer />
+      <div className={styles.Photo}>
+        <Image src="/Jax.jpeg" layout="fill" alt="Jax SkyLine" />
+      </div>
+      {/* <Footer /> */}
     </>
   );
 };

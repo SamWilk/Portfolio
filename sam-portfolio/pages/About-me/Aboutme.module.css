@@ -1,11 +1,18 @@
 .container {
-  min-height: 100vh;
+  max-height: 40vh;
   width: 100%;
 }
 
+.content {
+  min-height: 30vh;
+  width: 100%;
+  overflow: scroll;
+}
+
 .list {
-  background-color: #7e8584;
+  /* background-color: #7e8584; */
   display: inline-flex;
+  justify-content: center;
   width: 100%;
   padding: 2rem 2rem;
   border-radius: -3px;
@@ -14,12 +21,13 @@
 
 .back {
   width: 100%;
-  background-color: #7e8584;
+  background: transparent;
 }
 
 .bar {
   display: inline-flex;
-  width: 60%;
+  justify-content: center;
+  width: 100%;
   max-height: 5rem;
   min-height: 100%;
 }
@@ -33,5 +41,5 @@
 }
 
 .links:hover {
-  background-color: #4299a6;
+  transform: translateY(-10%);
 }

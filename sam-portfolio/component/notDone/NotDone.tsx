@@ -1,9 +1,8 @@
 /* eslint-disable @next/next/no-page-custom-font */
-import styles from "../Projects/projects.module.css";
+import styles from "../notDone/NotDone.module.css";
 import Head from "next/head";
-import NotDone from "../../component/notDone/NotDone";
 
-const searchingList = () => {
+const NotDone = () => {
   return (
     <>
       <Head>
@@ -13,10 +12,14 @@ const searchingList = () => {
         />
       </Head>
       <div className={styles.container}>
-        <NotDone />
+        <div className={styles.content}>
+          <h1 className={styles.litteBox}>Whoops!</h1>
+          <div className={styles.litteBox2}></div>
+          <h3>Still working on this one! Will hopefully be done soon!</h3>
+        </div>
       </div>
     </>
   );
 };
 
-export default searchingList;
+export default NotDone;

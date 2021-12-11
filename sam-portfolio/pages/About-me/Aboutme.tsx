@@ -1,14 +1,26 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import styles from "../About-me/Aboutme.module.css";
 import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
 import Education from "../../component/Education/Education";
 import Work from "../../component/Work/Work";
-// import { school } from "../../data/schools";
 import { PrismaClient } from ".prisma/client";
-import { school } from "../../data/schools";
+import NotDone from "../../component/notDone/NotDone";
+// import "rxjs/add/operator/map";
 
-const Aboutme = () => {
+const prisma = new PrismaClient();
+
+export async function getServerSideProps() {
+  const schools = await prisma.school.findMany();
+  const clubs = await prisma.clubs.findFirst({ where: { id: 1 } });
+  const work = await prisma.work.findMany();
+
+  return { props: { schools, clubs, work } };
+}
+
+//Then here do props: { schools: any, clubs: any}
+const Aboutme = (props: any) => {
   function handleChange(
     edu: boolean,
     work: boolean,
@@ -20,7 +32,7 @@ const Aboutme = () => {
     setRes(res);
     setContact(contact);
   }
-  const [edu, setEdu] = useState<boolean>(false);
+  const [edu, setEdu] = useState<boolean>(true);
   const [work, setWork] = useState<boolean>(false);
   const [res, setRes] = useState<boolean>(false);
   const [contact, setContact] = useState<boolean>(false);
@@ -71,8 +83,11 @@ const Aboutme = () => {
           </div>
         </div>
         <div id="content" className={styles.content}>
-          {edu && <Education />}
-          {work && <Work />}
+          {edu && <Education {...props} />}
+          {work && <Work {...props} />}
+          {res && <NotDone />}
+          {/* {<Work {...props} />} */}
+          {contact && <NotDone />} {/* <Work {...props} /> */}
         </div>
       </div>
     </>

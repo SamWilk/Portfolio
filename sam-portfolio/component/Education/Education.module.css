@@ -1,4 +1,60 @@
 .container {
   color: white;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 40vw;
+  max-height: 50vw;
+  max-width: 80%;
+  overflow: scroll;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  margin: 1rem;
+  min-height: 10vw;
+  background-color: transparent;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.box {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-width: 20rem;
+}
+.box1 {
+  padding: 1rem;
+  background-color: transparent;
+  padding: 4rem;
+  border-radius: 5px;
+  float: left;
+  margin-right: 3rem;
+  align-content: center;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.each {
+  padding-top: 0.3rem;
+}
+
+.clubDiscrip {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  min-width: none;
+}
+
+.discripTitle {
+  padding-bottom: 0.5rem;
 }
