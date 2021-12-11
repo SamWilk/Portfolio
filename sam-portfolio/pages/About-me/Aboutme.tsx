@@ -6,6 +6,7 @@ import { useState } from "react";
 import Education from "../../component/Education/Education";
 import Work from "../../component/Work/Work";
 import { PrismaClient } from ".prisma/client";
+import NotDone from "../../component/notDone/NotDone";
 // import "rxjs/add/operator/map";
 
 const prisma = new PrismaClient();
@@ -45,7 +46,7 @@ const Aboutme = (props: any) => {
         />
       </Head>
       <div className={styles.container}>
-        {/* <div className={styles.back}>
+        <div className={styles.back}>
           <div className={styles.bar}>
             <Link href="/About-me/Aboutme">
               <a
@@ -62,16 +63,16 @@ const Aboutme = (props: any) => {
               >
                 Work
               </a>
-            </Link> */}
-        {/* <Link href="/About-me/Aboutme">
+            </Link>
+            <Link href="/About-me/Aboutme">
               <a
                 className={styles.links}
                 onClick={() => handleChange(false, false, true, false)}
               >
                 Resume
               </a>
-            </Link> */}
-        {/* <Link href="/About-me/Aboutme">
+            </Link>
+            <Link href="/About-me/Aboutme">
               <a
                 className={styles.links}
                 onClick={() => handleChange(false, false, false, true)}
@@ -80,10 +81,13 @@ const Aboutme = (props: any) => {
               </a>
             </Link>
           </div>
-        </div> */}
+        </div>
         <div id="content" className={styles.content}>
-          {/* {edu && <Education {...props} />} */}
-          {/* {work && <Work {...props} />} */}
+          {edu && <Education {...props} />}
+          {work && <Work {...props} />}
+          {res && <NotDone />}
+          {/* {<Work {...props} />} */}
+          {contact && <NotDone />} {/* <Work {...props} /> */}
         </div>
       </div>
     </>

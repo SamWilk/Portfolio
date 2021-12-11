@@ -3,7 +3,7 @@
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  min-height: 50vw;
+  min-height: 30vw;
   width: 100%;
   padding: 1rem;
 }
@@ -11,11 +11,10 @@
 .content {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
-  margin: 1rem;
   min-height: 10vw;
-  background-color: #7e8584;
+  background-color: transparent;
   border-radius: 5px;
+  overflow: scroll;
 }
 
 /* .box {
@@ -26,17 +25,19 @@
 } */
 .box1 {
   padding: 1rem;
-  background-color: #202121;
-  padding-left: 38%;
-  padding-right: 30%;
-  border-radius: 5px;
+  background-color: transparent;
+  /* padding-left: 38%;
+  padding-right: 30%; */
+  display: flex;
   align-content: center;
-  justify-content: flex-end;
+  justify-content: center;
+  margin-bottom: 3rem;
 }
 .box2 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  max-width: 60rem;
 }
 
 .resp {

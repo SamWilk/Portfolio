@@ -10,7 +10,7 @@ const Education = (props: { schools?: any; clubs?: any }) => {
     <>
       <Head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
           rel="stylesheet"
         />
       </Head>
@@ -61,6 +61,7 @@ const Education = (props: { schools?: any; clubs?: any }) => {
             each others approach to different issues.
           </div>
         </div>
+
         {/* {clubs.map((items: any) => (
           <div key={items.id} className={styles.box}>
             {items.name}

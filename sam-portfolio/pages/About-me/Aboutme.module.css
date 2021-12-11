@@ -1,10 +1,12 @@
 .container {
-  min-height: 40vh;
+  max-height: 40vh;
   width: 100%;
 }
 
 .content {
+  min-height: 30vh;
   width: 100%;
+  overflow: scroll;
 }
 
 .list {
@@ -19,13 +21,12 @@
 
 .back {
   width: 100%;
-  background: linear-gradient(to right, #1f98de, transparent);
-  background: linear-gradient(to left, #1f98de, transparent);
+  background: transparent;
 }
 
 .bar {
   display: inline-flex;
-  justify-content: flex-end;
+  justify-content: center;
   width: 100%;
   max-height: 5rem;
   min-height: 100%;
@@ -40,5 +41,5 @@
 }
 
 .links:hover {
-  background: linear-gradient(to bottom, #8ebad4, #1f98de);
+  transform: translateY(-10%);
 }

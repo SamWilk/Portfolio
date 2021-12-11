@@ -18,7 +18,7 @@ const Work = (props: { work?: any }) => {
     <>
       <Head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
           rel="stylesheet"
         />
       </Head>

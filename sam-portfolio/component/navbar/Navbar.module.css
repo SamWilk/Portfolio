@@ -33,3 +33,18 @@
   /* background-color: #4299a6; */
   /* background: linear-gradient(to right, #1f98de, transparent); */
 }
+
+/* .each1 {
+  padding: 20px;
+  transition: 0.4s ease;
+  height: 100%;
+  border-radius: 2px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.each1:hover {
+  transform: translateY(-15%);
+  background-color: #4299a6;
+  background: linear-gradient(to right, #1f98de, transparent);
+} */

@@ -10,15 +10,15 @@
   z-index: 1;
 }
 .content {
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  /* padding-top: 5vh;
+  padding-bottom: 5vh; */
   border-top: 2px solid white;
   /* border-bottom: 2px solid white; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: 75vh;
-  min-width: 60%;
+  min-width: 80%;
   margin-bottom: 15vh;
   z-index: 1;
 }

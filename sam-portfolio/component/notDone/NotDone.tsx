@@ -1,8 +1,16 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import styles from "../notDone/NotDone.module.css";
+import Head from "next/head";
 
 const NotDone = () => {
   return (
     <>
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <div className={styles.container}>
         <div className={styles.content}>
           <h1 className={styles.litteBox}>Whoops!</h1>
