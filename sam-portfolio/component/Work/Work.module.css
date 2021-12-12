@@ -5,7 +5,7 @@
   flex-direction: column;
   min-height: 30vw;
   width: 100%;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 .content {

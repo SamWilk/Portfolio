@@ -1,0 +1,46 @@
+.container {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  min-height: 40vw;
+  max-height: 40vw;
+}
+
+.top {
+  margin-left: 43%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  margin-left: 2.3rem;
+  min-height: 10vw;
+  background-color: transparent;
+  border-radius: 5px;
+  align-items: center;
+  max-width: 60rem;
+  justify-content: space-between;
+}
+
+.line {
+  min-height: 10vw;
+  border: 1px solid white;
+}
+
+.each {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0.25rem;
+}
+
+.email {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0.25rem;
+}
+
+.email:hover {
+  color: black;
+}

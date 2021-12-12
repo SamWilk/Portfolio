@@ -41,3 +41,12 @@ model Work{
   website         String @default("")
   accomplishments String @default("")
 }
+
+model ContactInfo{
+  id      Int     @id @default(autoincrement())
+  Number  String  @unique 
+  Email   String  @unique @default("")
+  Name    String  @default("")
+  City    String @default("")
+  State   String  @default("")
+}
