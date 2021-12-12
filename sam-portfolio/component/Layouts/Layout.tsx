@@ -13,7 +13,7 @@ const Layout = ({ children }: any) => {
         <div className={styles.content}>{children}</div>
       </div>
       <div className={styles.Photo}>
-        {/* <Image src="/Jax.jpeg" layout="fill" alt="Jax SkyLine" /> */}
+        <Image src="/Jax.jpeg" layout="fill" alt="Jax SkyLine" />
       </div>
       {/* <Footer /> */}
     </>

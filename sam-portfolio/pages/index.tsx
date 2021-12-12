@@ -50,7 +50,7 @@ const Home: NextPage<any> = (props: { schools: any }) => {
           </div>
           <div className={styles.box}>
             <div className={styles.pic}>
-              {/* <Image src="/Me.jpeg" width={400} height={400} alt="Sam Wilk" /> */}
+              <Image src="/Me.jpeg" width={400} height={400} alt="Sam Wilk" />
             </div>
             <div></div>
           </div>
