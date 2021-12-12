@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/no-page-custom-font */
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -10,7 +11,7 @@ import { PrismaClient } from ".prisma/client";
 
 const prisma = new PrismaClient();
 //This works now but when trying to run next export it does not like getServerSideProps
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const schools = await prisma.school.findFirst({
     where: { name: "University of North Florida" },
   });
@@ -50,7 +51,7 @@ const Home: NextPage<any> = (props: { schools: any }) => {
           </div>
           <div className={styles.box}>
             <div className={styles.pic}>
-              <Image src="/Me.jpeg" width={400} height={400} alt="Sam Wilk" />
+              <img src="/Me.jpeg" alt="Sam Wilk" className={styles.MePic} />
             </div>
             <div></div>
           </div>

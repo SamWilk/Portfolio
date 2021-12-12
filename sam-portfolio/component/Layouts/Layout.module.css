@@ -1,13 +1,13 @@
 .container {
   z-index: 0;
   /* padding-right: 2rem; */
-  background-color: #202121;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  z-index: 1;
+  height: 114vh;
+  z-index: 2;
 }
 .content {
   /* padding-top: 5vh;
@@ -19,11 +19,28 @@
   justify-content: flex-start;
   min-height: 75vh;
   min-width: 80%;
-  margin-bottom: 15vh;
-  z-index: 1;
+  margin-bottom: 27vh;
+  z-index: 2;
 }
 
 .Photo {
-  z-index: 0;
+  position: absolute;
+  /* background-color: #202121; */
+  top: 0;
+  z-index: 1;
   opacity: 0.4;
+  width: 100%;
+  height: auto;
+}
+
+.jax {
+  width: 100%;
+  height: auto;
+}
+
+.back {
+  background-color: #202121;
+  z-index: 0;
+  width: 100%;
+  height: auto;
 }

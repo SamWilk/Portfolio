@@ -15,7 +15,7 @@ import type { NextPage } from "next";
 
 const prisma = new PrismaClient();
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const schools = await prisma.school.findMany();
   const clubs = await prisma.clubs.findFirst({ where: { id: 1 } });
   const work = await prisma.work.findMany();

@@ -13,6 +13,11 @@
   margin-top: 6rem;
 }
 
+.MePic {
+  height: 300px;
+  width: 300px;
+}
+
 .boxTitle {
   display: flex;
   justify-content: center;
