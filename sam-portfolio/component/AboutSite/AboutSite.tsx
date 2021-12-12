@@ -1,8 +1,19 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import styles from "../AboutSite/AboutSite.module.css";
+import Link from "next/link";
+import Head from "next/head";
 
 const AboutSite = () => {
   return (
     <>
+      <Head>
+        <link
+          href={
+            "https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+          }
+          rel="stylesheet"
+        />
+      </Head>
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.miniBox}>

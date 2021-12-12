@@ -9,7 +9,7 @@ import Footer from "../component/footer/Footer";
 import { PrismaClient } from ".prisma/client";
 
 const prisma = new PrismaClient();
-
+//This works now but when trying to run next export it does not like getServerSideProps
 export async function getServerSideProps() {
   const schools = await prisma.school.findFirst({
     where: { name: "University of North Florida" },
@@ -25,7 +25,9 @@ const Home: NextPage<any> = (props: { schools: any }) => {
       <div className={styles.container}>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+            href={
+              "https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+            }
             rel="stylesheet"
           />
           <title>Sam Wilk Portfolio</title>
@@ -48,7 +50,7 @@ const Home: NextPage<any> = (props: { schools: any }) => {
           </div>
           <div className={styles.box}>
             <div className={styles.pic}>
-              <Image src="/Me.jpeg" width={400} height={400} alt="Sam Wilk" />
+              {/* <Image src="/Me.jpeg" width={400} height={400} alt="Sam Wilk" /> */}
             </div>
             <div></div>
           </div>

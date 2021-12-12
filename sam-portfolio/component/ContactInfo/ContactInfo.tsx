@@ -1,12 +1,21 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import Link from "next/link";
 import styles from "../ContactInfo/ContactInfo.module.css";
+import Head from "next/head";
 
 const ContactInfo = (props: { contactInfo?: any }) => {
   const { contactInfo } = props;
 
-  console.log(contactInfo);
   return (
     <>
+      <Head>
+        <link
+          href={
+            "https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+          }
+          rel="stylesheet"
+        />
+      </Head>
       <div className={styles.container}>
         <div className={styles.secContent}>
           <h1 className={styles.top}>Contact me</h1>

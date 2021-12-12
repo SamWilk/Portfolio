@@ -2,13 +2,16 @@
 import styles from "../Projects/projects.module.css";
 import Head from "next/head";
 import NotDone from "../../component/notDone/NotDone";
+import type { NextPage } from "next";
 
-const searchingList = () => {
+const searchingList: NextPage<any> = () => {
   return (
     <>
       <Head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+          href={
+            "https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+          }
           rel="stylesheet"
         />
       </Head>

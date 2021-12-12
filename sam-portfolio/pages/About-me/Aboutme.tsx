@@ -9,6 +9,8 @@ import { PrismaClient } from ".prisma/client";
 import NotDone from "../../component/notDone/NotDone";
 import ContactInfo from "../../component/ContactInfo/ContactInfo";
 import AboutSite from "../../component/AboutSite/AboutSite";
+import type { NextPage } from "next";
+
 // import "rxjs/add/operator/map";
 
 const prisma = new PrismaClient();
@@ -23,7 +25,7 @@ export async function getServerSideProps() {
 }
 
 //Then here do props: { schools: any, clubs: any}
-const Aboutme = (props: any) => {
+const Aboutme: NextPage<any> = (props: any) => {
   function handleChange(
     edu: boolean,
     work: boolean,
@@ -44,7 +46,9 @@ const Aboutme = (props: any) => {
     <>
       <Head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+          href={
+            "https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+          }
           rel="stylesheet"
         />
       </Head>
