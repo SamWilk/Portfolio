@@ -14,7 +14,7 @@
   min-height: 10vw;
   background-color: transparent;
   border-radius: 5px;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 /* .box {

@@ -5,21 +5,32 @@
   max-height: 40vw;
 }
 
-.top {
+/* .top {
   margin-left: 43%;
+} */
+
+.secContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box {
+  padding: 0 5rem;
 }
 
 .content {
   display: flex;
   flex-direction: row;
   padding: 2rem;
-  margin-left: 2.3rem;
+  /* margin-left: 2.3rem; */
   min-height: 10vw;
   background-color: transparent;
   border-radius: 5px;
-  align-items: center;
+  align-items: flex-start;
   max-width: 60rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .line {

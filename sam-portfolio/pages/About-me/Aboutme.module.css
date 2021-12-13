@@ -6,7 +6,7 @@
 .content {
   min-height: 30vh;
   width: 100%;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .list {

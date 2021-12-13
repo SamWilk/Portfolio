@@ -7,7 +7,7 @@
   font-family: "Roboto", sans-serif;
   min-height: 40vw;
   max-height: 40vw;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .content {

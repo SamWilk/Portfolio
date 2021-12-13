@@ -3,11 +3,11 @@
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   min-height: 40vw;
   max-height: 50vw;
   max-width: 80%;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .content {
