@@ -3,6 +3,7 @@ import styles from "../Projects/projects.module.css";
 import Head from "next/head";
 import NotDone from "../../component/notDone/NotDone";
 import type { NextPage } from "next";
+import MyProject from "../../component/myProject/myProject";
 
 const searchingList: NextPage<any> = () => {
   return (
@@ -16,7 +17,8 @@ const searchingList: NextPage<any> = () => {
         />
       </Head>
       <div className={styles.container}>
-        <NotDone />
+        {/* <NotDone /> */}
+        <MyProject />
       </div>
     </>
   );
