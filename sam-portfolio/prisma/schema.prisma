@@ -19,9 +19,10 @@ model School{
 }
 
 model Projects{
-  id    Int  @id @default(autoincrement())
-  name  String @unique
-  site  String
+  id          Int  @id @default(autoincrement())
+  name        String @unique
+  site        String
+  discription String
 }
 
 model Clubs{
