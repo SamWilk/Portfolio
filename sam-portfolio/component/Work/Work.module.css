@@ -45,6 +45,13 @@
 }
 
 .values {
+  padding: 1rem;
+  background-color: rgba(48, 52, 59, 0.3);
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.values2 {
   padding: 0.5rem;
 }
 
