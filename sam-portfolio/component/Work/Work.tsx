@@ -42,7 +42,7 @@ const Work = (props: { work?: any }) => {
                     {items.responsiblity}
                   </div>
                   <div className={styles.miniBox}>
-                    <div key={items.workPlace} className={styles.values}>
+                    <div key={items.workPlace} className={styles.values2}>
                       Hire Date: {items.hireDate}
                       &emsp; Leave Date: {items.leaveDate}
                     </div>

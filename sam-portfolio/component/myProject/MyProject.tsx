@@ -11,7 +11,7 @@ const MyProject = (prop: any) => {
         <div className={styles.content}>
           {projects.map((items: any) => (
             <Link href={items.site} key={items.id}>
-              <a>
+              <a target="_blank">
                 <div key={items.id} className={styles.fadedContainer}>
                   <div className={styles.fadedBack}></div>
                   <div className={styles.organizeInfo}>
