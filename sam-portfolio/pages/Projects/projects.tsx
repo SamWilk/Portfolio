@@ -3,8 +3,18 @@ import styles from "../Projects/projects.module.css";
 import Head from "next/head";
 import NotDone from "../../component/notDone/NotDone";
 import type { NextPage } from "next";
+import MyProject from "../../component/myProject/MyProject";
+import { PrismaClient } from ".prisma/client";
 
-const searchingList: NextPage<any> = () => {
+const prisma = new PrismaClient();
+
+export async function getStaticProps() {
+  const projects = await prisma.projects.findMany();
+
+  return { props: { projects } };
+}
+
+const searchingList: NextPage<any> = (props: any) => {
   return (
     <>
       <Head>
@@ -16,7 +26,8 @@ const searchingList: NextPage<any> = () => {
         />
       </Head>
       <div className={styles.container}>
-        <NotDone />
+        {/* <NotDone /> */}
+        <MyProject props={props} />
       </div>
     </>
   );

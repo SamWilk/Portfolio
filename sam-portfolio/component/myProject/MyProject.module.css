@@ -1,0 +1,56 @@
+.container {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 30vw;
+  width: 100%;
+  /* padding: 1rem; */
+}
+.content {
+  display: flex;
+  padding: 2rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fadedContainer {
+  position: relative;
+  margin: 1rem;
+  padding: 2rem 3.5rem;
+  background-color: rgba(48, 52, 59, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s ease;
+  font-size: 0.9rem;
+  max-width: 30rem;
+  max-height: 12rem;
+  overflow: hidden;
+}
+
+.fadedContainer:hover {
+  background-color: rgba(48, 52, 59, 0.5);
+}
+
+.organizeInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  border: 1px solid white;
+  margin-bottom: 0.75rem;
+
+  min-width: 100%;
+}
+
+.projectText {
+  margin-bottom: 0.75rem;
+}
+
+/* .siteDescription {
+  overflow: scroll;
+} */
