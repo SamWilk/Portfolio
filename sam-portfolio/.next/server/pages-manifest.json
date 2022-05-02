@@ -1,0 +1,11 @@
+{
+  "/About-me/Aboutme": "pages/About-me/Aboutme.js",
+  "/Projects/projects": "pages/Projects/projects.js",
+  "/_app": "pages/_app.js",
+  "/api/getSchools": "pages/api/getSchools.js",
+  "/api/hello": "pages/api/hello.js",
+  "/": "pages/index.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}
